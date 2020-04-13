@@ -65,21 +65,19 @@ header nav p {
   display: none;
 }
 .main article .controles {
-  display: none;
-  width: 80%;
-  margin: 90%;
-  padding: 30px;
-  min-height: 200px;
   margin: auto;
+  width: 80%;
+  max-width: 85%;
+  display: none;
+  min-height: 30vh;
 }
 .main article .controles .back {
   float: left;
   display: block;
   padding: 1%;
   width: 8%;
-  min-width: 8%;
+  min-width: 50px;
   margin: 30px 0px;
-  font-size: 100%;
   background: #1f1b2e;
   color: white;
   border: 0;
@@ -90,10 +88,9 @@ header nav p {
   float: right;
   display: block;
   padding: 1%;
-  min-width: 8%;
+  min-width: 50px;
   width: 8%;
   margin: 30px 0px;
-  font-size: 100%;
   background: #1f1b2e;
   color: white;
   border: 0;
@@ -105,8 +102,8 @@ header nav p {
   display: none;
   padding: 10px;
   width: 20%;
+  min-width: 70px;
   margin: 30px 0px;
-  font-size: 20px;
   background: #1f1b2e;
   color: white;
   border: 0;
@@ -182,24 +179,29 @@ header nav p {
   opacity: 0.8;
 }
 .main article .pRealizadas {
-  margin-left: 500px;
   display: block;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .main article .items {
-  height: 45px;
+  min-height: 45px;
   margin-top: 120px;
   justify-content: center;
   align-items: center;
   display: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 80%;
+  margin: auto;
+  max-width: 85%;
 }
 .main article .items .item {
-  padding: 10px 20px;
-  margin-left: 10px;
-  background: #f3f3f3;
-  border-radius: 5px 5px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+  width: 8%;
+  min-width: 25px;
+  height: 40px;
+  margin: 2px;
+  text-decoration: none;
+  border: 1px solid gray;
 }
 .main article .items .item:hover {
   background: rgba(0, 0, 0, 0.2);
@@ -245,10 +247,24 @@ footer h5 {
 @media screen and (max-width: 768px) {
   .main article .login {
     width: 90%;
+    margin-top: 20px;
+  }
+  .main article .controles {
+    width: 90%;
+  }
+  .main article .items {
+    width: 90%;
   }
 }
 @media screen and (max-width: 360px) {
   .main article .login {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .main article .controles {
+    width: 100%;
+  }
+  .main article .items {
     width: 100%;
   }
 }
